@@ -1,7 +1,7 @@
 // Gemini API utility
 // Model: gemini-2.0-flash (vision + text)
 
-const GEMINI_MODEL = 'gemini-1.5-flash'
+const GEMINI_MODEL = 'gemini-2.0-flash'
 const GEMINI_API_BASE = 'https://generativelanguage.googleapis.com/v1beta'
 
 async function callGemini(apiKey, parts, systemInstruction = '') {
@@ -326,3 +326,4 @@ Devuelve:
   const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim()
   return JSON.parse(cleaned)
 }
+
